@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.7.4]
+
+### Bug Fixes
+
+- [`bc1136ba6`](https://www.github.com/tauri-apps/tauri/commit/bc1136ba6eef93d57b839a8e3634bb1a97d0befd) ([#16324](https://www.github.com/tauri-apps/tauri/pull/16324) by [@jay-tau](https://www.github.com/tauri-apps/tauri/../../jay-tau)) Set the modification time of the asset, icon and macOS `Info.plist` files `generate_context!` writes to `OUT_DIR` to 2000-01-01 UTC, so the first `cargo build` without changes after a build that created them no longer recompiles the app crate.
+
 ## [2.7.3]
 
 ### Dependencies
